@@ -1,0 +1,16 @@
+<view class="item mb-line-b">
+  <view class="title-block">
+    <view class="title line-ellipsis">青少年剧场</view>
+    <view class="location-block">
+        <view class="flex line-ellipsis">丰台区西四环南路86号</view>
+        <view class="distance">2.5km</view>
+    </view>
+    <view class="label-block">
+      <text class="allowRefund">退</text>
+      <text class="hallType">改签</text>
+      <text class="endorse">折扣卡</text>
+      <text class="vipTag">RealD厅</text>
+      <text class="snack">MX4D厅</text>
+    </view>
+  </view>
+</view>

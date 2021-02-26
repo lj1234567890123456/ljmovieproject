@@ -1,0 +1,67 @@
+.item {
+  padding: 13px 15px 10px 0;
+  margin: 0 15px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.mb-line-b {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACAQMAAABIeJ9nAAAABlBMVEUAAADh4eGdLxMbAAAAAXRSTlMAQObYZgAAAAxJREFUCNdjYGA4AAAAxADBPcXUKgAAAABJRU5ErkJggg==) 0 bottom repeat-x;
+}
+.title-block {
+  line-height: 1.5;
+}
+.title {
+  height: 23px;
+  line-height: 23px;
+  font-size: 16px;
+  color: #000;
+}
+.line-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.location-block {
+  display: flex;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #666;
+}
+.flex {
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+.line-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.distance {
+  margin-left: 5px;
+}
+.label-block {
+  height: 22px;
+  line-height: 22px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  overflow: hidden;
+}
+.label-block text {
+  position: relative;
+  display: inline-block;
+  padding: 3px;
+  height: 13px;
+  line-height: 15px;
+  border-radius: 2px;
+  font-size: 12px;
+  margin-right:5px;
+}
+.allowRefund, .endorse,.hallType{
+  color: #589daf;
+  border: 1px solid #589daf;
+}
+.vipTag,.snack {
+  color: #f90;
+  border: 1px solid #f90;
+}

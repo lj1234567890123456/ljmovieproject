@@ -1,0 +1,71 @@
+<!-- 顶部区域开始 -->
+<view class="movie-detail">
+  <view class="movie-filter"></view>
+  <!-- 背景图开始 -->
+  <view class="poster-background"  style="background-image:url('{{info.cover}}')">
+  </view>
+  <!-- 背景图结束 -->
+  <view class="detail">
+      <!--海报帧开始-->
+      <view class="poster">
+        <image src="{{info.cover}}"></image>
+      </view>
+      <!--海报帧结束-->
+      <!-- 内容区域开始 -->
+      <view class="content">
+          <view class="title line-ellipsis">{{info.moviename}}</view>
+          <view class="score line-ellipsis">{{info.score}}</view>
+          <view class="type line-ellipsis">主演: {{info.star}}</view>
+          <view class="type line-ellipsis">{{info.movietype}}</view>
+          <view class="type line-ellipsis">{{info.showingon}}上映</view>
+      </view>
+      <!-- 内容区域结束 -->
+  </view>
+</view>
+<!-- 顶部区域结束 -->
+<!-- 简介区域开始 -->
+<view class="introduction" bindtap="toggleDescription">
+  <view class="{{isOpen ? '' : 'line-clamp'}}">
+    <text decode="true">{{info.description}}</text>
+  </view>
+  <view class="more">
+    <image src="/images/{{isOpen ? 'arrow_up.png' : 'arrow_down.png'}}"></image>
+  </view>
+</view>
+<!-- 简介区域结束 -->
+<!-- 演职人员开始 -->
+<view class="actors">
+  <view class="title">演职人员</view>
+  <scroll-view scroll-x="true" class="actors-list">
+    <view class="actors-item" wx:for="{{info.director}}" wx:key="index">
+      <image src="{{item.avatar}}"></image>
+      <text>{{item.name}}</text>
+    </view>   
+    <view class="actors-item"  wx:for="{{info.actor}}" wx:key="index">
+      <image src="{{item.avatar}}"></image>
+      <text>{{item.name}}</text>
+    </view>   
+  </scroll-view>
+</view>
+<!-- 演职人员结束 -->
+<!-- 剧照开始 -->
+<view class="photos">
+  <view class="title">视频和剧照</view>
+  <scroll-view scroll-x="true" class="photos-list">
+     <view class="photos-item" wx:for="{{info.thumb}}" wx:key="index">
+        <image src="{{item}}" bindtap="previewImage" data-path="{{item}}"></image>
+     </view>    
+  </scroll-view>
+</view>
+<!-- 剧照结束 -->
+<!-- 评论开始 -->
+<view class="comments" wx:if="{{comments.length}}">
+    <view class="comment-item" wx:for="{{comments}}" wx:key="index">
+      <view><image class="avatar" src="/images/7782353e2b454e19b63c826faf78a2573576.jpg"></image></view>
+      <view class="right">
+          <view class="nickname">{{item.nickname}}</view>
+          <view class="comment-content">{{item.content}}</view>
+      </view>
+    </view>
+</view>
+<!-- 评论结束 -->

@@ -1,0 +1,7 @@
+<!--pages/cloudstorage/cloudstorage.wxml-->
+<text>pages/cloudstorage/cloudstorage.wxml</text>
+<image src="cloud://lllcloud-3gvrtrt08a8151b2.6c6c-lllcloud-3gvrtrt08a8151b2-1304588433/订单详情.jpg"></image>
+<button type="primary" bindtap="chooseImage">选取图片</button>
+<button type="primary" bindtap="remove">删除指定的记录</button>
+<button type="primary" bindtap="update">更新指定的记录</button>
+
